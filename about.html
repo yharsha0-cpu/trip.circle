@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Trip Circle</title>
+    <meta name="description" content="Learn about Trip Circle, an invite-only curated travel community.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-inner">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Trip Circle Logo">
+  <span class="logo-text">Trip Circle</span></a>
+            <div class="menu-toggle">☰</div>
+            <div class="menu-overlay"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about" style="padding:80px 20px;">
+        <div class="container">
+            <h1 class="section-title">About Trip Circle</h1>
+
+            <div class="about-container">
+
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+                    <img src="images/logo.png" alt="Trip Circle">
+                    <h2>Trip Circle</h2>
+                    <p>Invite-only curated travel community</p>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="about-right">
+
+                    <p>
+                        Founded by IIMA and ISB alums to provide immersive, safe, and memorable community group travel experiences.
+                    </p>
+
+                    <p>
+                        We are currently invite-only.
+                    </p>
+
+                    <p>
+                        Our trips are carefully curated by the founders for travellers who want to go beyond checklists and tourist trails.
+                    </p>
+
+                    <p>
+                        Come join us solo, or with friends / family — either way, you’ll never feel out of place.
+                    </p>
+
+                    <div style="margin-top:25px;">
+                        <strong>📍 Bengaluru</strong><br>
+                        <strong>📞 9480068906</strong><br>
+                        <strong>📧 hello.tripcircle@gmail.com</strong>
+                    </div>
+
+                    <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+                        <a href="https://wa.me/919480068906" class="btn btn-primary" target="_blank" rel="noopener noreferrer">💬 Chat on WhatsApp</a>
+                        <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer" class="insta-btn">📸 Follow us on Instagram</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <div class="logo"><img src="images/logo.png" alt="Trip Circle Logo">
+  <span class="logo-text">Trip Circle</span></div>
+                <p>Connecting young explorers, one trip at a time.</p>
+            </div>
+            <div class="links">
+                <p>Follow Us</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBq3bUJkK7CwxouRG3i" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Trip Circle. All rights reserved.</div>
+    </footer>
+
+    <script>
+        function applyDynamicWhatsAppLinks() {
+            const baseWhatsAppUrl = "https://wa.me/919480068906";
+            const defaultTripName = (document.querySelector(".page-hero h1, .hero h1, h1")?.textContent || document.title || "Trip")
+                .replace(/\s*-\s*Trip Circle\s*$/i, "")
+                .trim();
+
+            document.querySelectorAll("a[href*=\"wa.me/919480068906\"]").forEach(link => {
+                let tripName = defaultTripName;
+                const tripCard = link.closest(".trip-card, .trip-item, .destination-card, .card");
+                const heading = tripCard ? tripCard.querySelector("h2, h3, h4") : null;
+                if (heading && heading.textContent.trim()) {
+                    tripName = heading.textContent.trim();
+                }
+
+                const message = "Hi Trip Circle, I'm interested in " + tripName + ". Please share details.";
+                link.href = baseWhatsAppUrl + "?text=" + encodeURIComponent(message);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyDynamicWhatsAppLinks();
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        });
+
+        const menu = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        if (menuToggle && menu && overlay) {
+            menuToggle.onclick = () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            };
+
+            overlay.onclick = () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            };
+
+            document.querySelectorAll(".nav-links a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    overlay.classList.remove("active");
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

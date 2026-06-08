@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsterdam → Budapest - Trip Circle</title>
+    <meta name="description" content="Amsterdam → Budapest: 4 Cities • 4 Countries • 12 Days.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-inner">
+        <div class="nav-container">
+            <a href="index.html" class="logo-text-only" style="text-decoration: none;">Trip Circle</a>
+            <div class="menu-toggle">☰</div>
+            <div class="menu-overlay"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero" style="background-image: url('images/europe.jpg');">
+        <div class="page-hero-overlay"></div>
+        <h1>Amsterdam → Budapest</h1>
+        <p style="color: white; position: relative; z-index: 2; font-size: 20px; font-weight: 500; margin-top: 10px; letter-spacing: 0.5px;">&nbsp;</p>
+    </div>
+
+    <!-- QUICK INFO BAR -->
+    <div class="quick-info-bar fade-up-load">
+        <div class="quick-info-item">
+            <span class="label">Duration</span>
+            <span class="value">12 Days</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Group Size</span>
+            <span class="value">15–20 people</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Stay</span>
+            <span class="value">Hostels / Hotels</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Trip Type</span>
+            <span class="value">Group Trip</span>
+        </div>
+    </div>
+
+    <!-- ABOUT THIS TRIP -->
+    <section class="section" style="padding-top: 80px;">
+        <div class="container text-center fade-up">
+            <h2 style="font-size: 32px; color: var(--primary); margin-bottom: 20px;">About This Trip</h2>
+            <div class="title-underline" style="margin: 0 auto 30px;"></div>
+            <p style="font-size: 19px; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                Four of Europe's most iconic cities. One legendary journey. Cruise Amsterdam's canals, rave in Berlin, pub crawl through Prague, and soak in the thermal baths of Budapest — a full-blown Euro adventure packed with iconic landmarks, electric nightlife, hidden gems, and memories that will last a lifetime.
+            </p>
+        </div>
+    </section>
+
+    <!-- BRIEF ITINERARY (ACCORDION) -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Brief Itinerary</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper">
+                <!-- Amsterdam -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 1</span> – Arrival in Amsterdam</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Arrive in Amsterdam, check in and explore your first evening in one of Europe's most liberating cities – let’s start the evening (when it is still young and not hazy!) with a free drink on the house! and explore the best kept secrets of Amsterdam!</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 2</span> – Water, Culture & Freedom</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We start the day with a Canal Cruise drifting through Amsterdam's UNESCO-listed canal ring aboard a glass-topped boat. Later we head to the legendary Heineken Experience — learn the brewing process, discover the brand's 150-year history, and enjoy a couple of complimentary beers as part of the experience.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 3</span> – Wind & History</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Today we go on a day trip to Zaandam & Zaanse Schans: Escape the city to this open-air museum village where traditional Dutch windmills, wooden clog workshops, and cheese farms paint a vivid picture of Holland's rural heritage</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 4</span> – Amsterdam to Berlin</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Transfer to Berlin by the intercity train. Freshen up and experience Berlin's nightlife which is legendary and genre-defining — from techno temples in repurposed power stations to intimate jazz cellars and rooftop bars. The city truly comes alive after dark.</div>
+                    </div>
+                </div>
+
+                <!-- Berlin -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 5</span> – Berlin Exploration</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We start the day with a Walking Tour with Local Guide: Navigate Checkpoint Charlie, the Brandenburg Gate, the Holocaust Memorial, and the Reichstag — a city-wide open-air museum of 20th-century history told in concrete, bronze, and memory. Try the Berlin swing, and explore Dark matter - a unique experience before heading out for another techno night-out.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 6</span> – Berlin to Prague</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Transfer to Prague — a fairy-tale city of gothic spires, baroque palaces, and medieval bridges seemingly untouched by the modern world. Check in and take your first evening stroll across the Charles Bridge at dusk — one of Europe's most magical moments.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 7</span> – Castles, Bridges & Old Town</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We start the day with a walking Tour with Local Guide: Wind through the labyrinthine cobblestone lanes of Malá Strana, across the Vltava River, and up to the commanding heights of Prague Castle. Watch the medieval Astronomical Clock strike the hour, surrounded by Gothic churches and Romanesque cellars turned into jazz bars.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 8</span> – Adventure & The Night Life</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Wake up at your own time on this (free) day – those with adrenaline rush head out for a thrilling sky diving experience or take a short drive to the Skoda museum (any car lovers here?) or just walk around this pretty city and try out some amazing cafes (one of the cafes was frequented by Einstein) before an epic Pub Crawl in the night.</div>
+                    </div>
+                </div>
+
+                <!-- Prague -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 9</span> – Prague to Budapest</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Route: Prague → Budapest by bus  
+The final leg of the overland journey sweeps south through the Czech and Slovak countryside before crossing into Hungary. Budapest — the grand old capital straddling the Danube — greets you with its dramatic Chain Bridge, thermal steam, and ruin bar culture.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 10</span> – On the Water & Into the Night</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Explore the twin cities of Buda and Pest — stroll the UNESCO-listed Andrássy Avenue, visit the neo-Gothic Parliament Building on the Danube bank, and cross the iconic Chain Bridge between two distinct worlds. In the evening, cruise the Danube aboard a party boat — music, dancing, and the city's most romantic skyline all in one unforgettable evening.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 11</span> – Thermal Baths and Epic Send-Off</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Széchenyi Thermal Bath: Soak in Budapest's most famous thermal spa — an opulent 1913 neo-baroque palace of steaming outdoor pools and indoor baths fed by natural geothermal springs. We regroup in the evening one last evening for some fun.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 12</span> – Departure from Budapest</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">A final morning in Budapest before transferring to the airport and flying home. Twelve days, four countries, four cities, and a lifetime of stories.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS & EXCLUSIONS -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>What's Included?</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tab-header">
+                    <button class="tab-btn active" onclick="openTab(event, 'inclusions')"><i class="fas fa-check-circle" style="color: #2e7d32; margin-right: 8px;"></i> Inclusions</button>
+                    <button class="tab-btn" onclick="openTab(event, 'exclusions')"><i class="fas fa-times-circle" style="color: #d32f2f; margin-right: 8px;"></i> Exclusions</button>
+                </div>
+                
+                <!-- Tab: Inclusions -->
+                <div id="inclusions" class="tabcontent active">
+                    <ul class="tab-list inc">
+                        <li>
+                            <i class="fas fa-check"></i> Accommodation: 11 nights in hostels (sharing basis)
+                            <ul style="margin-left: 28px; margin-top: 8px; list-style-type: none; padding-left: 0;">
+                                <li>- 3 nights in Amsterdam</li>
+                                <li>- 2 nights in Berlin</li>
+                                <li>- 3 nights in Prague</li>
+                                <li>- 3 nights in Budapest</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Meals & Drinks:
+                            <ul style="margin-left: 28px; margin-top: 8px; list-style-type: none; padding-left: 0;">
+                                <li>- 11 breakfasts (daily)</li>
+                                <li>- 1-hour open bar + select shots during Prague Pub Crawl</li>
+                                <li>- Complimentary beers during Heineken Brewery Experience</li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-check"></i> Intercity Transportation: All travel between cities by train and bus</li>
+                        <li>
+                            <i class="fas fa-check"></i> Activities:
+                            <ul style="margin-left: 28px; margin-top: 8px; list-style-type: none; padding-left: 0;">
+                                <li>- Canal Cruise in Amsterdam</li>
+                                <li>- Heineken Brewery Experience</li>
+                                <li>- Day trip to Zaandam & Zaanse Schans Village</li>
+                                <li>- Walking tour in Berlin with local guide</li>
+                                <li>- Walking tour in Prague with local guide</li>
+                                <li>- Pub Crawl in Prague with open bar</li>
+                                <li>- Boat Party in Budapest</li>
+                                <li>- Walking Tour in Budapest with local guide</li>
+                            </ul>
+                        </li>
+                        <li><i class="fas fa-check"></i> Entry Fees & Local Taxes: All entry fees for included activities and local taxes — no hidden charges</li>
+                        <li><i class="fas fa-check"></i> Trip Leader & Local Guides: Experienced trip leader and city-specific local guides throughout</li>
+                        <li><i class="fas fa-check"></i> Pre-trip Support: Travel dossier with complete trip information, forex guidance, and eSIM advisory</li>
+                    </ul>
+                </div>
+                
+                <!-- Tab: Exclusions -->
+                <div id="exclusions" class="tabcontent">
+                    <ul class="tab-list exc">
+                        <li><i class="fas fa-times"></i> International flights (into Amsterdam and out of Budapest)</li>
+                        <li><i class="fas fa-times"></i> Schengen visa fees and visa assistance charges</li>
+                        <li><i class="fas fa-times"></i> GST (5%) and TCS (2%) applicable extra</li>
+                        <li><i class="fas fa-times"></i> Meals and beverages not specified in the itinerary</li>
+                        <li><i class="fas fa-times"></i> Personal expenses: tips, laundry, shopping, phone bills</li>
+                        <li><i class="fas fa-times"></i> Optional activities and personal excursions</li>
+                        <li><i class="fas fa-times"></i> Travel insurance</li>
+                        <li><i class="fas fa-times"></i> Airport transfers (unless specified)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATES & PRICES ACCORDION -->
+    <section class="dates-prices">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Dates & Prices</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper fade-up">
+                
+                <!-- Departure 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 12 Sep – 23 Sep</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>29 Jun</td><td>₹1,25,000</td></tr>
+                                        <tr><td>14 Jul</td><td>₹1,30,000</td></tr>
+                                        <tr><td>29 Jul</td><td>₹1,35,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 27 Sep – 08 Oct</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>14 Jul</td><td>₹1,25,000</td></tr>
+                                        <tr><td>29 Jul</td><td>₹1,30,000</td></tr>
+                                        <tr><td>13 Aug</td><td>₹1,35,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 21 Dec – 01 Jan</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>7 Oct</td><td>₹1,25,000</td></tr>
+                                        <tr><td>22 Oct</td><td>₹1,30,000</td></tr>
+                                        <tr><td>6 Nov</td><td>₹1,35,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GLOBAL CTA -->
+            <div class="text-center fade-up" style="margin-top: 50px;">
+                <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 20px;">Ready to Book? Let's Talk!</h3>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="padding: 14px 30px; font-size: 16px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px;" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="padding: 14px 30px; font-size: 16px; border-radius: 50px;" target="_blank">Reserve Your Spot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-terms-section">
+        <div class="container">
+            <h2>Payment Terms</h2>
+            <div class="payment-box">
+                <!-- PAYMENT_TERMS_DYNAMIC -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="dates-pricing-wrapper">
+                
+                
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-plane" style="color: var(--secondary);"></i> What flights should I book?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Book your flights to Amsterdam and outbound from Budapest. Our team will guide you on the flight timings.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-passport" style="color: var(--secondary);"></i> Is visa required?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Indian passport holders need a Schengen visa for this trip. Our team will guide you through the process.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-users" style="color: var(--secondary);"></i> Who can join this trip?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Join solo, with a partner, friends, or family — either way you’ll have a great experience.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <div class="logo-text-only">Trip Circle</div>
+                <p>Connecting young explorers, one trip at a time.</p>
+            </div>
+            <div class="links">
+                <p>Follow Us</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBq3bUJkK7CwxouRG3i" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Trip Circle. All rights reserved.</div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-mobile-cta">
+        <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank">Reserve Your Spot</a>
+        </div>
+    </div>
+
+    <!-- JS SCRIPTS -->
+    <script>
+        function applyDynamicWhatsAppLinks() {
+            const baseWhatsAppUrl = "https://wa.me/919480068906";
+            const defaultTripName = (document.querySelector(".page-hero h1, .hero h1, h1")?.textContent || document.title || "Trip")
+                .replace(/\s*-\s*Trip Circle\s*$/i, "")
+                .trim();
+
+            document.querySelectorAll("a[href*=\"wa.me/919480068906\"]").forEach(link => {
+                let tripName = defaultTripName;
+                const tripCard = link.closest(".trip-card, .trip-item, .destination-card, .card");
+                const heading = tripCard ? tripCard.querySelector("h2, h3, h4") : null;
+                if (heading && heading.textContent.trim()) {
+                    tripName = heading.textContent.trim();
+                }
+
+                const message = "Hi Trip Circle, I'm interested in " + tripName + ". Please share details.";
+                link.href = baseWhatsAppUrl + "?text=" + encodeURIComponent(message);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyDynamicWhatsAppLinks();
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-up, .fade-up-load').forEach(el => observer.observe(el));
+        });
+
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const body = item.querySelector('.accordion-body');
+            
+            item.classList.toggle('active');
+            
+            if (item.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + "px";
+                setTimeout(() => {
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
+            } else {
+                body.style.maxHeight = null;
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            
+            // Add slight delay to trigger opacity transition
+            setTimeout(() => {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            
+            evt.currentTarget.className += " active";
+        }
+
+        const menu = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        if (menuToggle && menu && overlay) {
+            menuToggle.onclick = () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            };
+
+            overlay.onclick = () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            };
+
+            document.querySelectorAll(".nav-links a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    overlay.classList.remove("active");
+                });
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

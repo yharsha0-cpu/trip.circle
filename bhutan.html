@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhutan Road Trip - Trip Circle</title>
+    <meta name="description" content="Bhutan Road Trip: 8 Days Himalayan journey through Phuentsholing, Thimphu, Punakha and Paro.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="has-sticky-cta">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-inner">
+        <div class="nav-container">
+            <a href="index.html" class="logo-text-only" style="text-decoration: none;">Trip Circle</a>
+            <div class="menu-toggle">☰</div>
+            <div class="menu-overlay"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero" style="background-image: url('images/bhutan.jpg');">
+        <div class="page-hero-overlay"></div>
+        <h1>Bhutan Road Trip</h1>
+        <p style="color: white; position: relative; z-index: 2; font-size: 20px; font-weight: 500; margin-top: 10px; letter-spacing: 0.5px;">&nbsp;</p>
+    </div>
+
+    <!-- QUICK INFO BAR -->
+    <div class="quick-info-bar fade-up-load">
+        <div class="quick-info-item">
+            <span class="label">Duration</span>
+            <span class="value">8 Days</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Group Size</span>
+            <span class="value">15–20 people</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Stay</span>
+            <span class="value">3-star hotels</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Trip Type</span>
+            <span class="value">Group Trip</span>
+        </div>
+    </div>
+
+    <!-- ABOUT THIS TRIP -->
+    <section class="section" style="padding-top: 80px;">
+        <div class="container text-center fade-up">
+            <h2 style="font-size: 32px; color: var(--primary); margin-bottom: 20px;">About This Trip</h2>
+            <div class="title-underline" style="margin: 0 auto 30px;"></div>
+            <p style="font-size: 19px; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                From mountains to valleys, beautiful dzongs to amazing bridges, lip smacking food to warm hospitality, Bhutan - the country that measures development through a Happiness Index!
+            </p>
+        </div>
+    </section>
+
+    <!-- BRIEF ITINERARY (ACCORDION) -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Brief Itinerary</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper">
+                <!-- Day 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 1</span> – Arrival in Phuentsholing</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Upon arrival at Bagdogra Airport, board your transfer and begin your journey to Bhutan. Cross the border and descend into Phuentsholing, complete the immigration formalities (a non-airport immigration which would probably your first!) and check into your hotel and settle for the night.</div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 2</span> – Journey to Thimphu</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">After breakfast, embark on a mesmerizing road journey through Bhutan's most spectacular countryside. Optional River rafting enroute – it doesn’t matter if you’ve rafted before or you can’t swim, rafting here is serene and fun! (PS: No previous tripper has opted out of rafting). Check-in to the hotel and explore Thimphu—the world's only capital city without traffic lights—and wander through vibrant local markets.</div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 3</span> – Thimphu to Punakha Scenic Loop</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Explore Thimphu's cultural landmarks and drive to Dochu La, one of Bhutan's most scenic mountain passes at 3,050 meters. Visit the Buddha Statue overlooking Thimphu valley, symbolizing peace and enlightenment and head out to Simply Bhutan: An immersive museum showcasing traditional Bhutanese culture, architecture, and lifestyle. Check-in to the hotel at Punakha and after dinner we shall have a game night with the group.</div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 4</span> – Phobjikha Valley</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Check-out from Punakha after breakfast and visit the magnificent Punakha Dzong, situated at the scenic confluence of the Mo Chhu and Po Chhu rivers. Visit the suspension bridge, click some great photos and have some amazing food from one of the best host you’d ever come across. Drive to Phobjikha and checkin to your hotel – freshen up and get ready for conversations over bon-fire!</div>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 5</span> – Departure to Paro</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Check-out from Phobjikha after breakfast after exploring the valley in the midnight. For those brave enough to wake up early, the valley is mystical around sunrise! Drive to Paro, one of Bhutan's most picturesque valleys. Check into your hotel and prepare for the journey's pinnacle experience. In the evening, explore Paro’s market area for some great souvenirs!</div>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 6</span> – Taktsang Monastery (Tiger Nest)</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Begin your expedition to Taktsang Monastery, one of the holiest sites in the Buddhist world. Arrive at the iconic Taktsang Monastery, clinging impossibly to a sheer cliff face 900 meters above the valley—a breathtaking architectural and spiritual marvel. Optional Traditional Bhutanese hot-stone bath to wind down the trek – it is an amazing experience and one worth trying!</div>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 7</span> – Homebound – Return Journey Begins</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Before we leave Paro, we will have a pitstop for a nice photo session in traditional Bhutanese outfit and also view the scenic Paro airport from one of the best view points! Arrive in Siliguri by evening, check into your hotel, and rest after a fulfilling day of travel.</div>
+                    </div>
+                </div>
+
+                <!-- Day 8 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 8</span> – Departure</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">After a final breakfast, depart for Bagdogra Airport. Take back treasured memories of the Bhutan Road Trip—a journey that has enriched your soul and expanded your horizons.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS & EXCLUSIONS -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>What's Included?</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tab-header">
+                    <button class="tab-btn active" onclick="openTab(event, 'inclusions')"><i class="fas fa-check-circle" style="color: #2e7d32; margin-right: 8px;"></i> Inclusions</button>
+                    <button class="tab-btn" onclick="openTab(event, 'exclusions')"><i class="fas fa-times-circle" style="color: #d32f2f; margin-right: 8px;"></i> Exclusions</button>
+                </div>
+                
+                <!-- Tab: Inclusions -->
+                <div id="inclusions" class="tabcontent active">
+                    <ul class="tab-list inc">
+                        <li><i class="fas fa-check"></i> Transportation: Shared cab travel from Siliguri to Siliguri</li>
+                        <li><i class="fas fa-check"></i> Permits: Bhutan entry permit for 7 days including all Inner Line Permits</li>
+                        <li><i class="fas fa-check"></i> Accommodation: 7 nights in 3-star hotels</li>
+                        <li><i class="fas fa-check"></i> 1 night in Phuentsholing</li>
+                        <li><i class="fas fa-check"></i> 1 night in Thimphu</li>
+                        <li><i class="fas fa-check"></i> 1 night in Punakha</li>
+                        <li><i class="fas fa-check"></i> 1 night in Phobjikha</li>
+                        <li><i class="fas fa-check"></i> 2 nights in Paro</li>
+                        <li><i class="fas fa-check"></i> 1 night in Siliguri</li>
+                        <li><i class="fas fa-check"></i> Meals: Breakfasts on all days from Day 2 & 6 dinners</li>
+                        <li><i class="fas fa-check"></i> Guided Services: Local English-speaking guide and expert trek leadership</li>
+                        <li><i class="fas fa-check"></i> Taktsang Monastery Trek: Professionally guided hike with all logistics</li>
+                        <li><i class="fas fa-check"></i> Additional: Driver night charges, toll taxes, parking, medical and first aid kit</li>
+                    </ul>
+                </div>
+                
+                <!-- Tab: Exclusions -->
+                <div id="exclusions" class="tabcontent">
+                    <ul class="tab-list exc">
+                        <li><i class="fas fa-times"></i> GST (5%) and TCS (2%) applicable extra</li>
+                        <li><i class="fas fa-times"></i> SDF charges (₹1,200 per night per person) – to be paid in cash directly, because we don’t want you to pay GST on SDF</li>
+                        <li><i class="fas fa-times"></i> Meals and beverages not specified in the itinerary</li>
+                        <li><i class="fas fa-times"></i> Alcoholic beverages and bottled water</li>
+                        <li><i class="fas fa-times"></i> Highway meals and refreshments</li>
+                        <li><i class="fas fa-times"></i> Personal expenses (tips, camera fees, laundry, phone bills)</li>
+                        <li><i class="fas fa-times"></i> Monument entry tickets</li>
+                        <li><i class="fas fa-times"></i> Costs from natural calamities (landslides, roadblocks)</li>
+                        <li><i class="fas fa-times"></i> Airport drop from Siliguri to Bagdogra</li>
+                        <li><i class="fas fa-times"></i> Any unforeseen charges due to policy changes or flight delays</li>
+                        <li><i class="fas fa-times"></i> Any other expense not mentioned in inclusions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- IMPORTANT NOTES -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Important Notes</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul class="tab-list exc">
+                        <li><i class="fas fa-info-circle"></i> Entry permits are mandatory for all travellers and are included in the package.</li>
+                        <li><i class="fas fa-info-circle"></i> Sustainable Development Fee (SDF) charges of ₹1,200 per person per night are mandatory and must be paid during the trip.</li>
+                        <li><i class="fas fa-info-circle"></i> All activities during the trip will be accompanied by experienced local guides.</li>
+                        <li><i class="fas fa-info-circle"></i> Accommodation will be provided on a twin-sharing basis throughout the journey.</li>
+                        <li><i class="fas fa-info-circle"></i> Hiring local guides helps enhance your cultural experience and understanding of Bhutan.</li>
+                        <li><i class="fas fa-info-circle"></i> Travellers are expected to respect local customs, traditions, and cultural practices at all times during the trip.</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATES & PRICES ACCORDION -->
+    <section class="dates-prices">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Dates & Prices</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper fade-up">
+                
+                <!-- Departure 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 26 Sep – 3 Oct</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>28 July</td><td>₹35,000</td></tr>
+                                        <tr><td>12 Aug</td><td>₹37,500</td></tr>
+                                        <tr><td>27 Aug</td><td>₹40,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+</div>
+                            <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                                <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                                <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 24 Oct – 31 Oct</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>25 Aug</td><td>₹35,000</td></tr>
+                                        <tr><td>9 Sep</td><td>₹37,500</td></tr>
+                                        <tr><td>24 Sep</td><td>₹40,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+</div>
+                            <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                                <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                                <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 21 Nov – 28 Nov</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>22 Sep</td><td>₹35,000</td></tr>
+                                        <tr><td>7 Oct</td><td>₹37,500</td></tr>
+                                        <tr><td>22 Oct</td><td>₹40,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+</div>
+                            <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                                <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                                <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 25 Dec – 1 Jan</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>26 Oct</td><td>₹42,000</td></tr>
+                                        <tr><td>10 Nov</td><td>₹45,000</td></tr>
+                                        <tr><td>25 Nov</td><td>₹48,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+</div>
+                            <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                                <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                                <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GLOBAL CTA -->
+            <div class="text-center fade-up" style="margin-top: 50px;">
+                <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 20px;">Ready to Book? Let's Talk!</h3>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="padding: 14px 30px; font-size: 16px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px;" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="padding: 14px 30px; font-size: 16px; border-radius: 50px;" target="_blank">Reserve Your Spot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-terms-section">
+        <div class="container">
+            <h2>Payment Terms</h2>
+            <div class="payment-box">
+                <!-- PAYMENT_TERMS_DYNAMIC -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="dates-pricing-wrapper">
+                
+                
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-plane" style="color: var(--secondary);"></i> What flights should I book?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Book your flights to Bagdogra and outbound from Bagdogra. Our team will guide you on the flight timings.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-passport" style="color: var(--secondary);"></i> Is visa required?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Indian need to carry passport or Voter ID do not require a visa for Bhutan. Our team will guide you if anything is needed.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-users" style="color: var(--secondary);"></i> Who can join this trip?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Join solo, with a partner, friends, or family — either way you’ll have a great experience.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <div class="logo-text-only">Trip Circle</div>
+                <p>Connecting young explorers, one trip at a time.</p>
+            </div>
+            <div class="links">
+                <p>Follow Us</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBq3bUJkK7CwxouRG3i" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Trip Circle. All rights reserved.</div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-mobile-cta">
+        <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank">Reserve Your Spot</a>
+        </div>
+    </div>
+
+    <!-- JS SCRIPTS -->
+    <script>
+        function applyDynamicWhatsAppLinks() {
+            const baseWhatsAppUrl = "https://wa.me/919480068906";
+            const defaultTripName = (document.querySelector(".page-hero h1, .hero h1, h1")?.textContent || document.title || "Trip")
+                .replace(/\s*-\s*Trip Circle\s*$/i, "")
+                .trim();
+
+            document.querySelectorAll("a[href*=\"wa.me/919480068906\"]").forEach(link => {
+                let tripName = defaultTripName;
+                const tripCard = link.closest(".trip-card, .trip-item, .destination-card, .card");
+                const heading = tripCard ? tripCard.querySelector("h2, h3, h4") : null;
+                if (heading && heading.textContent.trim()) {
+                    tripName = heading.textContent.trim();
+                }
+
+                const message = "Hi Trip Circle, I'm interested in " + tripName + ". Please share details.";
+                link.href = baseWhatsAppUrl + "?text=" + encodeURIComponent(message);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyDynamicWhatsAppLinks();
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-up, .fade-up-load').forEach(el => observer.observe(el));
+        });
+
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const body = item.querySelector('.accordion-body');
+            
+            item.classList.toggle('active');
+            
+            if (item.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + "px";
+                setTimeout(() => {
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
+            } else {
+                body.style.maxHeight = null;
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            
+            // Add slight delay to trigger opacity transition
+            setTimeout(() => {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            
+            evt.currentTarget.className += " active";
+        }
+
+        const menu = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        if (menuToggle && menu && overlay) {
+            menuToggle.onclick = () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            };
+
+            overlay.onclick = () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            };
+
+            document.querySelectorAll(".nav-links a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    overlay.classList.remove("active");
+                });
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

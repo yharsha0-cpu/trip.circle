@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europe Trips - Trip Circle</title>
+    <meta name="description" content="Choose your perfect Europe experience with Trip Circle.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-inner">
+        <div class="nav-container">
+            <a href="index.html" class="logo-text-only" style="text-decoration: none;">Trip Circle</a>
+            <div class="menu-toggle">☰</div>
+            <div class="menu-overlay"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <h1>Europe Trips</h1>
+        <p style="color: rgba(255,255,255,0.9); position: relative; z-index: 2; font-size: 18px; margin-top: 10px;">Choose your perfect Europe experience</p>
+        <p style="color: rgba(255,255,255,0.88); position: relative; z-index: 2; font-size: 16px; margin-top: 8px; text-align: center;">3 ways to experience Europe — choose your vibe 👇</p>
+    </div>
+
+    <!-- EUROPE OPTIONS -->
+    <section class="up-trips section">
+        <div class="container">
+            <div class="trips-grid">
+                <!-- Card 2 -->
+                <div class="trip-card fade-up" style="transition-delay: 70ms; border: 2px solid rgba(230, 81, 0, 0.35); transform: translateY(-6px); box-shadow: var(--shadow-lg);">
+                    <div class="trip-img">
+                        <img src="images/europe2.jpg" alt="Amsterdam Budapest Trip" loading="lazy">
+                    </div>
+                    <div class="trip-content">
+                        <div class="trip-header"><h3>Amsterdam → Budapest</h3></div>
+                        <ul class="trip-details">
+                            <li><i class="far fa-calendar-alt"></i> 12 Sep, 27 Sep, 21 Dec</li>
+
+                        </ul>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+                            <a href="europe-amsterdam-budapest.html" class="btn btn-secondary" style="flex: 1; min-width: 150px; justify-content: center;">View Details</a>
+                            <a href="https://wa.me/919480068906" class="btn btn-primary" style="flex: 1; min-width: 150px; justify-content: center;" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> 💬 Get Trip Plan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="trip-card fade-up" style="transition-delay: 140ms;">
+                    <div class="trip-img">
+                        <img src="images/europe3.jpg" alt="Paris Budapest Trip" loading="lazy">
+                    </div>
+                    <div class="trip-content">
+                        <div class="trip-header"><h3>Paris → Budapest</h3></div>
+                        <ul class="trip-details">
+                            <li><i class="far fa-calendar-alt"></i> 12 Sep, 27 Sep, 21 Dec</li>
+
+                        </ul>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+                            <a href="europe-paris-budapest.html" class="btn btn-secondary" style="flex: 1; min-width: 150px; justify-content: center;">View Details</a>
+                            <a href="https://wa.me/919480068906" class="btn btn-primary" style="flex: 1; min-width: 150px; justify-content: center;" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> 💬 Get Trip Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <div class="cta-content fade-up">
+            <h2>Ready to explore Europe with your tribe?</h2>
+            <p>Pick your route and we will help you plan every detail.</p>
+            <a href="https://wa.me/919480068906" class="btn btn-cta pulse-anim" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> Chat With Us on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <div class="logo-text-only">Trip Circle</div>
+                <p>Connecting young explorers, one trip at a time.</p>
+            </div>
+            <div class="links">
+                <p>Follow Us</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBq3bUJkK7CwxouRG3i" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Trip Circle. All rights reserved.</div>
+    </footer>
+
+    <script>
+        function applyDynamicWhatsAppLinks() {
+            const baseWhatsAppUrl = "https://wa.me/919480068906";
+            const defaultTripName = (document.querySelector(".page-hero h1, .hero h1, h1")?.textContent || document.title || "Trip")
+                .replace(/\s*-\s*Trip Circle\s*$/i, "")
+                .trim();
+
+            document.querySelectorAll("a[href*=\"wa.me/919480068906\"]").forEach(link => {
+                let tripName = defaultTripName;
+                const tripCard = link.closest(".trip-card, .trip-item, .destination-card, .card");
+                const heading = tripCard ? tripCard.querySelector("h2, h3, h4") : null;
+                if (heading && heading.textContent.trim()) {
+                    tripName = heading.textContent.trim();
+                }
+
+                const message = "Hi Trip Circle, I'm interested in " + tripName + ". Please share details.";
+                link.href = baseWhatsAppUrl + "?text=" + encodeURIComponent(message);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyDynamicWhatsAppLinks();
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        });
+
+        const menu = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        if (menuToggle && menu && overlay) {
+            menuToggle.onclick = () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            };
+
+            overlay.onclick = () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            };
+
+            document.querySelectorAll(".nav-links a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    overlay.classList.remove("active");
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

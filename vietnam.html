@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam City Hop - Trip Circle</title>
+    <meta name="description" content="Vietnam City Hop: 8 Days across Ho Chi Minh City, Hoi An, Hanoi, and Halong Bay.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="has-sticky-cta">
+
+    <!-- NAVIGATION -->
+    <nav class="navbar-inner">
+        <div class="nav-container">
+            <a href="index.html" class="logo-text-only" style="text-decoration: none;">Trip Circle</a>
+            <div class="menu-toggle">☰</div>
+            <div class="menu-overlay"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero" style="background-image: url('images/vietnam.jpg');">
+        <div class="page-hero-overlay"></div>
+        <h1>Vietnam City Hop</h1>
+        <p style="color: white; position: relative; z-index: 2; font-size: 20px; font-weight: 500; margin-top: 10px; letter-spacing: 0.5px;">&nbsp;</p>
+    </div>
+
+    <!-- QUICK INFO BAR -->
+    <div class="quick-info-bar fade-up-load">
+        <div class="quick-info-item">
+            <span class="label">Duration</span>
+            <span class="value">8 Days</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Group Size</span>
+            <span class="value">15–20 people</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Stay</span>
+            <span class="value">3/4 star hotels</span>
+        </div>
+        <div class="quick-info-item">
+            <span class="label">Trip Type</span>
+            <span class="value">Group Trip</span>
+        </div>
+    </div>
+
+    <!-- ABOUT THIS TRIP -->
+    <section class="section" style="padding-top: 80px;">
+        <div class="container text-center fade-up">
+            <h2 style="font-size: 32px; color: var(--primary); margin-bottom: 20px;">About This Trip</h2>
+            <div class="title-underline" style="margin: 0 auto 30px;"></div>
+            <p style="font-size: 19px; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                Vietnam is one of those destinations that has become a must-visit in your 20s(or 30s)! It has the pace of Thailand while also offering unique experiences. Also, a paradise for coffee lovers - matcha lovers also would love the coffee here. Legend says that Indian cafe owners are taking long trips here to understand how the Vietnamese Cold Coffee is brewed!
+            </p>
+        </div>
+    </section>
+
+    <!-- BRIEF ITINERARY (ACCORDION) -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Brief Itinerary</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper">
+                <!-- Day 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 1</span> – Arrival in Ho Chi Minh City</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Land in the pulsating heart of southern Vietnam and transfer to your centrally located hotel. Freshen up and head out to capture the colonial grandeur of the Notre-Dame Cathedral and the historic Central Post Office. Explore the backpacker buzz of Bui Vien Walking Street — a neon corridor of open-air bars, live music, and local vendors.</div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 2</span> – Cu Chi Tunnels & City History</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We visit the Cu Chi Tunnels — crawl through narrow passages, examine hidden trapdoors, and fire authentic period weapons at the shooting range. Ascend to a rooftop bar for sweeping panoramas of the Ho Chi Minh skyline.</div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 3</span> – Ho Chi Minh City to Hoi An</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Fly north to Da Nang and transfer to the timeless Hoi An Ancient Town. We will stop by the Marble Mountains before checking into our hotel. In the evening, float a flower lantern down the Thu Bon River, browse the vibrant night market, and feast on Hoi An's signature dishes.</div>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 4</span> – Ba Na Hills & the Golden Bridge</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We head out on a day trip to Ba Na Hills where the crown jewel awaits: the Golden Bridge! Explore the French Village, and the Fantasy Park - the roller coaster and dashing cars are a must do!</div>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 5</span> – Basket Boat Experience</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">We head out to the coconut palm-lined waterways of the Cam Thanh Village for a basket boat experience — spin in traditional round coracles through narrow canals. Cycle through Hoi An at golden hour, and maybe visit a local tailor to get a custom suit or dress made (a popular thing to do here).</div>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 6</span> – Hoi An to Hanoi & Train Street</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Fly north to Hanoi, check-in to the hotel right in the middle of the bustling Old Quarter. Freshen up and explore the 36 Streets Old Quarter. Later, we head to the hidden entrance of the infamous train street, where a train runs through a busy narrow market street!</div>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 7</span> – Halong Bay Kayaking & Return to Hanoi</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Board your junk cruise into Halong Bay — a UNESCO World Heritage Site. Settle into your cabin, enjoy a welcome lunch on deck, and kayak into hidden lagoons and sea caves accessible only by paddle. Head back to Hanoi and end the evening with some fresh beer.</div>
+                    </div>
+                </div>
+
+                <!-- Day 8 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date"><span style="color: var(--secondary); margin-right: 8px;">Day 8</span> – Departure from Hanoi</div>
+                        <div class="accordion-btn"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">After a final Vietnamese breakfast, transfer to Noi Bai International Airport carrying the full weight of Vietnam's beauty, history, and spirit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INCLUSIONS & EXCLUSIONS -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>What's Included?</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tab-header">
+                    <button class="tab-btn active" onclick="openTab(event, 'inclusions')"><i class="fas fa-check-circle" style="color: #2e7d32; margin-right: 8px;"></i> Inclusions</button>
+                    <button class="tab-btn" onclick="openTab(event, 'exclusions')"><i class="fas fa-times-circle" style="color: #d32f2f; margin-right: 8px;"></i> Exclusions</button>
+                </div>
+                
+                <!-- Tab: Inclusions -->
+                <div id="inclusions" class="tabcontent active">
+                    <ul class="tab-list inc">
+                        <li><i class="fas fa-check"></i> Accommodation: 7 nights on twin-sharing basis</li>
+                        <li><i class="fas fa-check"></i> 2 nights in Ho Chi Minh City (3–4 star hotel)</li>
+                        <li><i class="fas fa-check"></i> 3 nights in Hoi An (3–4 star boutique hotel)</li>
+                        <li><i class="fas fa-check"></i> 2 nights in Hanoi (3–4 star hotel)</li>
+                        <li><i class="fas fa-check"></i> Meals: 7 breakfasts + lunch on Halong Bay cruise</li>
+                        <li><i class="fas fa-check"></i> Transportation: Domestic flights (Ho Chi Minh City → Da Nang, Da Nang → Hanoi), all road transfers</li>
+                        <li><i class="fas fa-check"></i> Activities:</li>
+                        <li><i class="fas fa-check"></i> Cu Chi Tunnels guided tour</li>
+                        <li><i class="fas fa-check"></i> Ba Na Hills cable car and Golden Bridge entry</li>
+                        <li><i class="fas fa-check"></i> Basket boat and crab-fishing experience</li>
+                        <li><i class="fas fa-check"></i> Marble Mountains guided climb</li>
+                        <li><i class="fas fa-check"></i> Halong Bay junk cruise with kayaking and cave exploration</li>
+                        <li><i class="fas fa-check"></i> Support: English-speaking trip leader and local guides throughout</li>
+                    </ul>
+                </div>
+                
+                <!-- Tab: Exclusions -->
+                <div id="exclusions" class="tabcontent">
+                    <ul class="tab-list exc">
+                        <li><i class="fas fa-times"></i> International flights and airport transfers</li>
+                        <li><i class="fas fa-times"></i> Vietnam e-visa fees and travel insurance</li>
+                        <li><i class="fas fa-times"></i> Meals and beverages not specified in the itinerary</li>
+                        <li><i class="fas fa-times"></i> Personal expenses: tips, laundry, shopping, phone bills</li>
+                        <li><i class="fas fa-times"></i> Alcoholic beverages and personal snacks</li>
+                        <li><i class="fas fa-times"></i> GST (5%) and TCS (2%) applicable extra</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- IMPORTANT NOTES -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Important Notes</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul class="tab-list exc">
+                        <li><i class="fas fa-info-circle"></i> Vietnam e-visa required</li>
+                        <li><i class="fas fa-info-circle"></i> Carry light clothing</li>
+                        <li><i class="fas fa-info-circle"></i> Dress modestly in temples</li>
+                        <li><i class="fas fa-info-circle"></i> Halong Bay depends on weather</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATES & PRICES ACCORDION -->
+    <section class="dates-prices">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Dates & Prices</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="dates-pricing-wrapper fade-up">
+                
+                <!-- Departure 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 04 Jul – 11 Jul</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>5 May</td><td>₹60,000</td></tr>
+                                        <tr><td>20 May</td><td>₹63,000</td></tr>
+                                        <tr><td>4 Jun</td><td>₹66,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 12 Sep – 19 Sep</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>14 Jul</td><td>₹60,000</td></tr>
+                                        <tr><td>29 Jul</td><td>₹63,000</td></tr>
+                                        <tr><td>13 Aug</td><td>₹66,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 17 Oct – 24 Oct</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>18 Aug</td><td>₹60,000</td></tr>
+                                        <tr><td>2 Sep</td><td>₹63,000</td></tr>
+                                        <tr><td>17 Sep</td><td>₹66,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Departure 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div>
+                            <div class="accordion-date"><i class="far fa-calendar-alt"></i> 25 Dec – 1 Jan</div>
+                            <div class="accordion-status">Open</div>
+                        </div>
+                        <div class="accordion-btn">Check Price</div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            <div class="pricing-table-wrapper">
+                                <table class="pricing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Book Before</th>
+                                            <th>Price (pp)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>13 Oct</td><td>₹70,000</td></tr>
+                                        <tr><td>28 Oct</td><td>₹74,000</td></tr>
+                                        <tr><td>12 Nov</td><td>₹77,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>GST (5%) and TCS (2%) applicable extra</div>
+                        </div>
+                        <div style="display: flex; gap: 15px; margin-top: 24px; flex-wrap: wrap;">
+                            <a href="https://wa.me/919480068906" class="btn btn-secondary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; min-width: 200px; justify-content: center;" target="_blank">Reserve Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GLOBAL CTA -->
+            <div class="text-center fade-up" style="margin-top: 50px;">
+                <h3 style="font-size: 24px; color: var(--primary); margin-bottom: 20px;">Ready to Book? Let's Talk!</h3>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="padding: 14px 30px; font-size: 16px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px;" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="padding: 14px 30px; font-size: 16px; border-radius: 50px;" target="_blank">Reserve Your Spot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="payment-terms-section">
+        <div class="container">
+            <h2>Payment Terms</h2>
+            <div class="payment-box">
+                <!-- PAYMENT_TERMS_DYNAMIC -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section bg-light">
+        <div class="container fade-up">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="dates-pricing-wrapper">
+                
+                
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-plane" style="color: var(--secondary);"></i> What flights should I book?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Book your flights to Ho Chi Minh City and outbound from Hanoi. Our team will guide you on the flight timings.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-passport" style="color: var(--secondary);"></i> Is visa required?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Indian passport holders need a visa for Vietnam. Our team will guide you through the process.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <div class="accordion-date" style="font-size: 17px; font-weight: 600;"><i class="fas fa-users" style="color: var(--secondary);"></i> Who can join this trip?</div>
+                        <div class="accordion-btn" style="border: none; padding: 0;"><i class="fas fa-chevron-down" style="font-size: 18px;"></i></div>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">Join solo, with a partner, friends, or family — either way you’ll have a great experience.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <div class="logo-text-only">Trip Circle</div>
+                <p>Connecting young explorers, one trip at a time.</p>
+            </div>
+            <div class="links">
+                <p>Follow Us</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/trip.circle?igsh=MXNuM3I5YWVoNGF1Mg==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VbBq3bUJkK7CwxouRG3i" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Trip Circle. All rights reserved.</div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-mobile-cta">
+        <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/919480068906" class="btn btn-secondary pulse-anim" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank"><i class="fab fa-whatsapp"></i> Chat</a>
+            <a href="https://forms.gle/ajJf6RtngLu6pWBg6" class="btn btn-primary" style="flex: 1; padding: 14px; font-size: 15px; justify-content: center; text-align: center;" target="_blank">Reserve Your Spot</a>
+        </div>
+    </div>
+
+    <!-- JS SCRIPTS -->
+    <script>
+        function applyDynamicWhatsAppLinks() {
+            const baseWhatsAppUrl = "https://wa.me/919480068906";
+            const defaultTripName = (document.querySelector(".page-hero h1, .hero h1, h1")?.textContent || document.title || "Trip")
+                .replace(/\s*-\s*Trip Circle\s*$/i, "")
+                .trim();
+
+            document.querySelectorAll("a[href*=\"wa.me/919480068906\"]").forEach(link => {
+                let tripName = defaultTripName;
+                const tripCard = link.closest(".trip-card, .trip-item, .destination-card, .card");
+                const heading = tripCard ? tripCard.querySelector("h2, h3, h4") : null;
+                if (heading && heading.textContent.trim()) {
+                    tripName = heading.textContent.trim();
+                }
+
+                const message = "Hi Trip Circle, I'm interested in " + tripName + ". Please share details.";
+                link.href = baseWhatsAppUrl + "?text=" + encodeURIComponent(message);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyDynamicWhatsAppLinks();
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-up, .fade-up-load').forEach(el => observer.observe(el));
+        });
+
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            const body = item.querySelector('.accordion-body');
+            
+            item.classList.toggle('active');
+            
+            if (item.classList.contains('active')) {
+                body.style.maxHeight = body.scrollHeight + "px";
+                setTimeout(() => {
+                    item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
+            } else {
+                body.style.maxHeight = null;
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            
+            // Add slight delay to trigger opacity transition
+            setTimeout(() => {
+                document.getElementById(tabName).classList.add("active");
+            }, 10);
+            
+            evt.currentTarget.className += " active";
+        }
+
+        const menu = document.querySelector(".nav-links");
+        const overlay = document.querySelector(".menu-overlay");
+        const menuToggle = document.querySelector(".menu-toggle");
+
+        if (menuToggle && menu && overlay) {
+            menuToggle.onclick = () => {
+                menu.classList.toggle("active");
+                overlay.classList.toggle("active");
+            };
+
+            overlay.onclick = () => {
+                menu.classList.remove("active");
+                overlay.classList.remove("active");
+            };
+
+            document.querySelectorAll(".nav-links a").forEach(link => {
+                link.addEventListener("click", () => {
+                    menu.classList.remove("active");
+                    overlay.classList.remove("active");
+                });
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
